@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<link rel="stylesheet" href="estilo.css">
+  <title>empower_academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+	
+
+   
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="./imagens/Background (1).png" alt=""></a>
+   
+    <div class="d-none d-lg-block"> <!-- Ocultar em dispositivos menores que large (lg) -->
+      <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Unidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Modalidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" ><span class="button_matricula">Matricule-se</span> </a>
+          </li>
+        </ul>
+    </div>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">nossas unidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">fala com a gente</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</nav>
+
+<div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+    
+    
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <img src="./imagens/Capturarlolo.PNG"
+           class="d-block w-100 c-img" alt="Slide 1" >
+           <p class="display-3 fw-bolder text-capitalize">um cantinho só para elas</p>
+           <button class="btn btn-info px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                   data-bs-target="#booking-modal">matricule-se</button>
+      <div class="carousel-caption top-0 mt-4">
+
+        
+        
+     
+       
+      </div>
+    </div>
+    //imagem 2
+    <div class="carousel-item c-item">
+      <img src="./imagens/imagem1.jpg"
+           class="d-block w-100 c-img" alt="Slide 3">
+      <div class="carousel-caption top-0 mt-4">
+        
+        <p class=" display-3 fw-bolder text-capitalize text-text">"O segredo de ficar a frente é começar!"</p>
+        <a href=""> <button class="btn btn-warning px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">COMEÇAR AGORA</button></a>
+      </div>
+    </div>
+    
+    
+    <div class="carousel-item c-item">
+      <img src="./imagens/Background.jpg"
+           class="d-block w-100 c-img" alt="Slide 3">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="text-uppercase fs-3 mt-5">Espaço<span class="power"> GIRL POWER</span> </p>
+        <p class="display-3 fw-bolder text-capitalize ">um cantinho só para elas</p>
+        <a href=""> <button class="btn btn-warning px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">saiba mais</button></a>
+      </div>
+    </div>
+
+    <div class="carousel-item c-item">
+      <img src="./imagens/nutricao-na-academia.png"
+           class="d-block w-100 c-img" alt="Slide 3">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="text-uppercase fs-3 mt-5">Espaço<span class="power"> encontro marcado com a saúde</span> </p>
+        <p class="display-3 fw-bolder text-capitalize ">agende sua nutricionista</p>
+        <a href=""> <button class="btn btn-warning px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">agendar</button></a>
+      </div>
+    </div>
+
+    <div class="carousel-item c-item">
+      <img src="./imagens/judo.png"
+           class="d-block w-100 c-img" alt="Slide 3">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="text-uppercase fs-3 mt-5">Espaço<span class="power">artes marciais</span> </p>
+        <p class="display-3 fw-bolder text-capitalize ">Judô Infantil</p>
+        <a href=""> <button class="btn btn-warning px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">conhecer</button></a>
+      </div>
+    </div>
+    
+
+   
+  </div>
+  
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var navbarToggler = document.querySelector(".navbar-toggler");
+    var navbarCollapse = document.querySelector(".navbar-collapse");
+
+    navbarToggler.addEventListener("click", function () {
+      navbarCollapse.classList.toggle("show");
+    });
+
+    // Fechar o menu ao clicar em um link
+    var navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    navbarLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navbarCollapse.classList.remove("show");
+      });
+    });
+ });
+</script>
+
+<div class="procurar">
+
+  <h1 class="text">encontre uma academia</h1>
+
+  <div class="search">
+    <input type="text" class="search__input" placeholder="Bairro,Cidade">
+    <button class="search__button">
+        <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+            <g>
+                <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+            </g>
+        </svg>
+    </button>
+</div>
+</div>
+
+<div class="container px-4">
+  <div class="row gx-5">
+    <div class="titulo2">
+      <h1 class="titulo3">Por que escolher a <SPAN class="empower_academy">EMPOWER ACADEMY?</SPAN></h1>
+      <div class=" mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="./imagens/woman.jpg" class="img-fluid " alt="..." style="width: 100%;" height="500px">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">LIFE STYLE</h5>
+              <p class="card-text1"> Está cansado de academias superlotadas, onde é difícil até mesmo encontrar espaço para treinar? 
+                Apresentamos a você a Academia Exclusiva, um lugar onde o seu conforto e resultados são prioridade!</p><br>
+              <p class="card-text1"> Diferente de qualquer outra academia,
+                 na Academia Exclusiva limitamos o número de alunos ativos a apenas 500, 
+                 garantindo um ambiente espaçoso e agradável para cada um dos nossos membros.
+                  Nossa filosofia é simples: qualidade acima de quantidade..</p>
+
+                  <button id="reserva">fazer reserva</button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div >
+    <div>
+      <h1>Nossos Diferenciais</h1>
+    </div>
+    <div>
+    <div class="cards_imagem">
+    <div class="card text-center"  style="   width: 22rem; margin:20px 0;">
+      <img src="./imagens/elas.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Espaço GIRL POWER</h5>
+        <p class="card-text">"Descubra o nosso Espaço Feminino, um ambiente dedicado exclusivamente às mulheres,
+           onde o foco é o seu bem-estar, conforto e empoderamento. Junte-se a nós para treinar com confiança e sem 
+           constrangimentos!"</p>
+        <a href="#" class="btn btn-warning">conhecer</a>
+      </div>
+      
+    </div>
+    <div class="card text-center " style="width: 22rem; margin: 20px  0;">
+      <img src="./imagens/melhorespaco.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ambientes Modernos</h5>
+        <p class="card-text"> Investimos em equipamentos modernos e de alta qualidade para garantir 
+          que você tenha acesso ao que há de melhor no mundo fitness. Nossas máquinas são ergonomicamente projetadas
+           e oferecem uma experiência de treino excepcional.</p>
+        <a href="#" class="btn btn-warning">conhecer</a>
+      </div>
+    </div>
+    <div class="card text-center" style="width: 22rem; margin:20px  0;">
+      <img src="./imagens/professores.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Professores Qualificados</h5>
+        <p class="card-text">"Na nossa academia, você encontrará uma equipe de professores altamente qualificados, dedicados a fornecer orientação especializada e
+           apoio personalizado para ajudá-la a alcançar seus objetivos de forma segura e eficaz."</p>
+        <a href="#" class="btn btn-warning">conhecer</a>
+      </div>
+    </div>
+  </div>
+
+<!--------------------- PLANOS------------------------>
+<h1 class="titulo-plano">nossos planos</h1>
+
+
+<div class="planos">
+<div class="pricing-table">
+  <div class="pricing-column">
+      <h3>Mensal</h3>
+      <p class="price">$550/mês</p>
+      <ul>
+          <li><i class="fas fa-check-circle"></i> Acesso ilimitado</li>
+          <li><i class="fas fa-check-circle"></i> Aulas em grupo</li>
+          <li><i class="fas fa-check-circle"></i> Assessoria</li>
+          <li><i class="fas fa-check-circle"></i> Nutricionista</li>
+      </ul>
+      <a href="#" class="btn-preco">Inscrever-se</a>
+  </div>
+  <div class="pricing-column">
+      <h3>Semestral</h3>
+      <p class="price">$2.100/semestre</p>
+      <ul>
+         
+          <li><i class="fas fa-check-circle"></i> Acesso ilimitado</li>
+          <li><i class="fas fa-check-circle"></i> Aulas em grupo</li>
+          <li><i class="fas fa-check-circle"></i> Assessoria</li>
+          <li><i class="fas fa-check-circle"></i> Nutricionista</li>
+          <li><i class="fas fa-check-circle"></i> direito a trancar a matrícula</li>
+      </ul>
+      <a href="#" class="btn-preco">Inscrever-se</a>
+  </div>
+  <div class="pricing-column">
+      <h3>Anual</h3>
+      <p class="price">$5.280/ano</p>
+      <ul>
+         
+          <li><i class="fas fa-check-circle"></i> Acesso ilimitado</li>
+          <li><i class="fas fa-check-circle"></i> Aulas em grupo</li>
+          <li><i class="fas fa-check-circle"></i> Assessoria</li>
+          <li><i class="fas fa-check-circle"></i> Nutricionista</li>
+          <li><i class="fas fa-check-circle"></i> direito a trancar a matrícula</li>
+          <li><i class="fas fa-check-circle"></i> artes marciais</li>
+          
+
+      </ul>
+      <a href="#" class="btn-preco">Inscrever-se</a>
+  </div>
+</div>
+</div>
+
+<!-- footer-->
+
+
+  <footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h4>empower_academy</h4>
+            <h6>sigo-nos nas redes sociais</h6>
+            
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>Blog</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">tecnologia</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">aventuras</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">musica</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Produtos</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">trabalhe conosco</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Seja membro</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Nosso Sistema de atendimento</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Inscreva-se</h3>
+
+            <p>
+                Entre com seu email para entrarmos em contato
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2024 todos os direitos reservados
+    </div>
+</footer>
+</body>
+</html>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
